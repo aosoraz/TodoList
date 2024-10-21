@@ -29,7 +29,7 @@ const EditPage = ({ task, setRoute, updateTask }) => {
 
   return (
     <>
-      <Navbar />
+      <Navbar setRoute={setRoute}/>
       <div className="px-10 py-5 flex flex-col">
         <div className="text-3xl font-bold mb-2">Detail To Do</div>
         <label>Title</label>

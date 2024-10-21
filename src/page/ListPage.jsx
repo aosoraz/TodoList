@@ -36,7 +36,7 @@ const ListPage = ({setRoute, tasks, editTask}) => {
                 </select>
             </div>
         </div>
-        <div className="grid grid-flow-col flex justify-center items-center gap-10 h-[81vh]">
+        <div className="grid md:grid-flow-col md:grid-rows-1 grid-rows-3 md:py-0 p-2 flex justify-center items-center md:gap-10 gap-15 md:h-[81vh] h-[100vh]">
             {groupedTasksArray.map(([priority, tasks], index) => (<ListTable key={index} priority={priority} tasks={tasks} editTask={editTask}/>))}
         </div>
         <Footer />

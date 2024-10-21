@@ -7,11 +7,7 @@ function App() {
 
   const[route, setRoute] = useState('home');
 
-  const[tasks, setTasks] = useState([
-    {id: "1", title: "Task 1", description: "test" ,priority: "High", deadline: "2021-10-01"},
-    {id: "2", title: "Task 2", description: "test" ,priority: "Medium", deadline: "2021-10-02"},
-    {id: "3", title: "Task 3", description: "test" ,priority: "Low", deadline: "2021-10-03"},
-  ])
+  const[tasks, setTasks] = useState([])
 
   const [selectedTask, setSelectedTask] = useState(null);
 

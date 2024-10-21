@@ -38,7 +38,7 @@ const AddPage = ({ setRoute, addTask }) => {
   return (
     <>
       <Navbar setRoute={setRoute} />
-      <div className="flex flex-col px-[20rem] w-full gap-4 py-12">
+      <div className="flex flex-col md:px-[20rem] px-2 w-full gap-4 py-12">
         <p className="text-xl font-bold">Add To Do</p>
 
         <label>Title</label>
@@ -64,9 +64,9 @@ const AddPage = ({ setRoute, addTask }) => {
           value={priority}
           onChange={(e) => setPriority(e.target.value)}
         >
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
         </select>
 
         <label>Deadline</label>
